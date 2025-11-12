@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "cypress": "^15.3.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.0"
+  },
+  "scripts": {
+    "test": "cypress open",
+    "api": "npx cypress run ./cypress/e2e/teste_api/**/*.cy.js",
+    "ui": "npx cypress run ./cypress/e2e/teste_ui/**/*.cy.js"
+  }
+}

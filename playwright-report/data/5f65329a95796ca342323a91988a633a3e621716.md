@@ -1,0 +1,236 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e5]:
+        - link "Automation Test Store" [ref=e7] [cursor=pointer]:
+          - /url: https://automationteststore.com/
+          - img "Automation Test Store" [ref=e8]
+        - generic [ref=e10]:
+          - list [ref=e13]:
+            - listitem [ref=e14]:
+              - link "Login or register" [ref=e15] [cursor=pointer]:
+                - /url: https://automationteststore.com/index.php?rt=account/login
+          - generic [ref=e17]:
+            - generic [ref=e18]: Main Menu
+            - list [ref=e19]:
+              - listitem [ref=e20]:
+                - link " Specials" [ref=e21] [cursor=pointer]:
+                  - /url: https://automationteststore.com/index.php?rt=product/special
+                  - generic [ref=e22]: 
+                  - text: Specials
+              - listitem [ref=e23]:
+                - link " Account" [ref=e24] [cursor=pointer]:
+                  - /url: https://automationteststore.com/index.php?rt=account/account
+                  - generic [ref=e25]: 
+                  - text: Account
+                - text:  
+              - listitem [ref=e26]:
+                - link " Cart" [ref=e27] [cursor=pointer]:
+                  - /url: https://automationteststore.com/index.php?rt=checkout/cart
+                  - generic [ref=e28]: 
+                  - text: Cart
+              - listitem [ref=e29]:
+                - link " Checkout" [ref=e30] [cursor=pointer]:
+                  - /url: https://automationteststore.com/index.php?rt=checkout/shipping
+                  - generic [ref=e31]: 
+                  - text: Checkout
+          - generic [ref=e34]:
+            - textbox "Search Keywords" [ref=e35]
+            - generic "Go" [ref=e36] [cursor=pointer]:
+              - generic [ref=e37]: 
+    - generic [ref=e39]:
+      - list [ref=e41]:
+        - listitem [ref=e42]:
+          - generic [ref=e44]: $ US Dollar
+      - list [ref=e47]:
+        - listitem [ref=e48]:
+          - link " 0 Items - $0.00" [ref=e49] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=checkout/cart
+            - generic [ref=e50]: 
+            - text: 0 Items - $0.00
+          - text:   
+      - generic [ref=e53]:
+        - link "Facebook" [ref=e54] [cursor=pointer]:
+          - /url: http://www.facebook.com
+        - link "Twitter" [ref=e55] [cursor=pointer]:
+          - /url: https://twitter.com/
+        - link "Linkedin" [ref=e56] [cursor=pointer]:
+          - /url: https://uk.linkedin.com/
+  - generic [ref=e57]:
+    - navigation [ref=e60]:
+      - list [ref=e61]:
+        - listitem [ref=e62]:
+          - link "Home" [ref=e63] [cursor=pointer]:
+            - /url: https://automationteststore.com/
+          - text:      
+        - listitem [ref=e64]:
+          - link "Apparel & accessories" [ref=e65] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=68
+        - listitem [ref=e66]:
+          - link "Makeup" [ref=e67] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=36
+        - listitem [ref=e68]:
+          - link "Skincare" [ref=e69] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=43
+        - listitem [ref=e70]:
+          - link "Fragrance" [ref=e71] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=49
+        - listitem [ref=e72]:
+          - link "Men" [ref=e73] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=58
+        - listitem [ref=e74]:
+          - link "Hair Care" [ref=e75] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=52
+        - listitem [ref=e76]:
+          - link "Books" [ref=e77] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=65
+    - list [ref=e80]:
+      - listitem [ref=e81]:
+        - link " Home" [ref=e82] [cursor=pointer]:
+          - /url: https://automationteststore.com/
+          - generic "Home" [ref=e83]: 
+          - text: Home
+      - listitem [ref=e84]:
+        - text: 
+        - link "Register Account" [ref=e85] [cursor=pointer]:
+          - /url: https://automationteststore.com/index.php?rt=account/account
+      - listitem [ref=e86]:
+        - text: 
+        - link "Login" [ref=e87] [cursor=pointer]:
+          - /url: https://automationteststore.com/index.php?rt=account/login
+  - generic [ref=e91]:
+    - heading " Account Login" [level=1] [ref=e92]:
+      - generic [ref=e93]:
+        - generic [ref=e94]: 
+        - text: Account Login
+    - generic [ref=e95]:
+      - button "×" [ref=e96] [cursor=pointer]
+      - text: "Error: Incorrect login or password provided."
+    - generic [ref=e97]:
+      - generic [ref=e98]:
+        - heading "I am a new customer." [level=2] [ref=e99]
+        - generic [ref=e100]:
+          - heading "Checkout Options:" [level=4] [ref=e101]
+          - group [ref=e103]:
+            - generic [ref=e105]:
+              - radio "Register Account" [checked] [ref=e106]
+              - text: Register Account
+            - generic [ref=e107]: By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.
+            - button " Continue" [ref=e108] [cursor=pointer]:
+              - generic [ref=e109]: 
+              - text: Continue
+      - generic [ref=e110]:
+        - heading "Returning Customer" [level=2] [ref=e111]
+        - generic [ref=e112]:
+          - heading "I am a returning customer." [level=4] [ref=e113]
+          - group [ref=e115]:
+            - generic [ref=e116]:
+              - generic [ref=e117]: "Login Name:"
+              - textbox [ref=e119]: Asus VivoBook S14
+            - generic [ref=e120]:
+              - generic [ref=e121]: "Password:"
+              - textbox [ref=e123]
+            - link "Forgot your password?" [ref=e124] [cursor=pointer]:
+              - /url: https://automationteststore.com/index.php?rt=account/forgotten/password
+            - link "Forgot your login?" [ref=e125] [cursor=pointer]:
+              - /url: https://automationteststore.com/index.php?rt=account/forgotten/loginname
+            - button " Login" [ref=e126] [cursor=pointer]:
+              - generic [ref=e127]: 
+              - text: Login
+  - contentinfo [ref=e131]:
+    - generic [ref=e133]:
+      - generic [ref=e136]:
+        - heading "About Us" [level=2] [ref=e137]
+        - paragraph [ref=e138]: This store has been created to enable students to practice their automation testing skills. This is not a real store, no orders are actually placed or payments taken. This store is to be used for educational purposes only.
+      - generic [ref=e141]:
+        - heading "Contact Us" [level=2] [ref=e142]
+        - list [ref=e143]:
+          - listitem [ref=e144]:
+            - generic [ref=e145]: 
+            - text: +123 456 7890
+          - listitem [ref=e146]:
+            - generic [ref=e147]: 
+            - text: admin@automationteststore.com
+      - generic [ref=e150]:
+        - heading "Testimonials" [level=2] [ref=e151]
+        - generic [ref=e152]:
+          - list [ref=e154]:
+            - listitem [ref=e155]:
+              - text: "\"Regular customer and products at great prices. Thanks again.\""
+              - generic [ref=e156]: "By : Mrs Baker on trustedmegareviews.org"
+            - listitem [ref=e157]:
+              - text: "\"Really great products and professional service!\""
+              - generic [ref=e158]: "By : Megan Witmore"
+            - listitem [ref=e159]:
+              - text: "\"I found this store to be very reasonably priced and the service was superb. Highly recommended \""
+              - generic [ref=e160]: "By : Jason Sturidge"
+            - listitem [ref=e161]:
+              - text: "\"Returns were easy and my replacement item arrived very quickly. Really great service. Thanks and will be buying again.\""
+              - generic [ref=e162]: "By : Kirsty Williams"
+            - listitem [ref=e163]:
+              - text: "\"Regular customer and products at great prices. Thanks again.\""
+              - generic [ref=e164]: "By : Mrs Baker on trustedmegareviews.org"
+            - listitem [ref=e165]:
+              - text: "\"Really great products and professional service!\""
+              - generic [ref=e166]: "By : Megan Witmore"
+          - list [ref=e167]:
+            - listitem [ref=e168]:
+              - generic [ref=e169] [cursor=pointer]: "1"
+            - listitem [ref=e170]:
+              - generic [ref=e171] [cursor=pointer]: "2"
+            - listitem [ref=e172]:
+              - generic [ref=e173]: "3"
+            - listitem [ref=e174]:
+              - generic [ref=e175] [cursor=pointer]: "4"
+      - generic [ref=e178]:
+        - heading "Newsletter Signup" [level=2] [ref=e179]
+        - generic [ref=e180]:  Sign up to Our Newsletter & get attractive Offers by subscribing to our newsletters.
+        - generic [ref=e183]:
+          - textbox "Subscribe to Newsletter" [ref=e184]
+          - button "Subscribe" [ref=e186] [cursor=pointer]
+    - generic [ref=e188]:
+      - list [ref=e191]:
+        - listitem [ref=e192]:
+          - link "About Us" [ref=e194] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=content/content&content_id=1
+        - listitem [ref=e195]:
+          - link "Privacy Policy" [ref=e197] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=content/content&content_id=2
+        - listitem [ref=e198]:
+          - link "Return Policy" [ref=e200] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=content/content&content_id=3
+        - listitem [ref=e201]:
+          - link "Shipping" [ref=e203] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=content/content&content_id=4
+        - listitem [ref=e204]:
+          - link "Contact Us" [ref=e205] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=content/contact
+        - listitem [ref=e206]:
+          - link "Site Map" [ref=e207] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=content/sitemap
+        - listitem [ref=e208]:
+          - link "Login" [ref=e209] [cursor=pointer]:
+            - /url: https://automationteststore.com/index.php?rt=account/login
+      - generic [ref=e211]:
+        - link "Facebook" [ref=e212] [cursor=pointer]:
+          - /url: http://www.facebook.com
+        - link "Twitter" [ref=e213] [cursor=pointer]:
+          - /url: https://twitter.com/
+        - link "Linkedin" [ref=e214] [cursor=pointer]:
+          - /url: https://uk.linkedin.com/
+    - generic [ref=e216]:
+      - img "payments" [ref=e219]
+      - generic [ref=e220]:
+        - text: Powered By
+        - link "AbanteCart" [ref=e221] [cursor=pointer]:
+          - /url: http://www.abantecart.com
+        - text: Automation Test Store © 2025
+      - link "Support AbanteCart eCommerce" [ref=e224] [cursor=pointer]:
+        - /url: http://www.abantecart.com/contribute-to-abantecart
+        - img "Support AbanteCart eCommerce" [ref=e225]
+    - link "Back to top" [ref=e226] [cursor=pointer]:
+      - /url: "#"
+```

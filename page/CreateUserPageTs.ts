@@ -1,57 +1,49 @@
-class CreateUserPage {
-  constructor() {
-    this.page = null;
+import { Page } from '@playwright/test';
 
-    this.selectors = {
-      loginOrRegisterBtn: 'a[href*="account/login"]',
-      continueNewCustomerBtn: '#accountFrm fieldset .btn',
-      firstNameInput: '#AccountFrm_firstname',
-      lastNameInput: '#AccountFrm_lastname',
-      emailInput: '#AccountFrm_email',
-      telephoneInput: '#AccountFrm_telephone',
-      addressInput: '#AccountFrm_address_1',
-      cityInput: '#AccountFrm_city',
-      zoneSelect: '#AccountFrm_zone_id',
-      postcodeInput: '#AccountFrm_postcode',
-      countrySelect: '#AccountFrm_country_id',
-      usernameInput: '#AccountFrm_loginname',
-      passwordInput: '#AccountFrm_password',
-      confirmPasswordInput: '#AccountFrm_confirm',
-      agreeCheckbox: '#AccountFrm_agree',
-      continueBtn: 'button[title="Continue"]',
-      successMessage: 'text=Your Account Has Been Created!'
-    };
-  }
+export class CreateUserPageTs {
+  readonly page: Page;
+  readonly selectors = {
+    loginOrRegisterBtn: 'a[href*="account/login"]',
+    continueNewCustomerBtn: '#accountFrm fieldset .btn',
+    firstNameInput: '#AccountFrm_firstname',
+    lastNameInput: '#AccountFrm_lastname',
+    emailInput: '#AccountFrm_email',
+    telephoneInput: '#AccountFrm_telephone',
+    addressInput: '#AccountFrm_address_1',
+    cityInput: '#AccountFrm_city',
+    zoneSelect: '#AccountFrm_zone_id',
+    postcodeInput: '#AccountFrm_postcode',
+    countrySelect: '#AccountFrm_country_id',
+    usernameInput: '#AccountFrm_loginname',
+    passwordInput: '#AccountFrm_password',
+    confirmPasswordInput: '#AccountFrm_confirm',
+    agreeCheckbox: '#AccountFrm_agree',
+    continueBtn: 'button[title="Continue"]',
+    successMessage: 'text=Your Account Has Been Created!'
+  };
 
-  _ensurePage() {
-    if (!this.page) {
-      throw new Error("Page object not initialized. Call visit(page) first!");
-    }
-  }
-
-  async visit(page) {
+  constructor(page: Page) {
     this.page = page;
+  }
 
+  async visit() {
     await this.page.goto('https://automationteststore.com/', {
       waitUntil: 'domcontentloaded'
     });
-
     await this.page.waitForLoadState('networkidle');
   }
 
   async goToLoginOrRegister() {
-    this._ensurePage();
+    await this.page.waitForSelector(this.selectors.loginOrRegisterBtn, { state: 'visible', timeout: 10000 });
     await this.page.click(this.selectors.loginOrRegisterBtn);
   }
 
   async clickContinueNewCustomer() {
-    this._ensurePage();
+    await this.page.waitForSelector(this.selectors.continueNewCustomerBtn, { state: 'visible', timeout: 10000 });
     await this.page.click(this.selectors.continueNewCustomerBtn);
   }
 
-  async fillRegistrationForm(username, email, password) {
-    this._ensurePage();
-
+  async fillRegistrationForm(username: string, email: string, password: string) {
     await this.page.fill(this.selectors.firstNameInput, 'Test');
     await this.page.fill(this.selectors.lastNameInput, 'User');
     await this.page.fill(this.selectors.emailInput, email);
@@ -65,19 +57,10 @@ class CreateUserPage {
     await this.page.fill(this.selectors.passwordInput, password);
     await this.page.fill(this.selectors.confirmPasswordInput, password);
     await this.page.selectOption(this.selectors.zoneSelect, { label: 'Aberdeen' });
-
     await this.page.check(this.selectors.agreeCheckbox);
   }
 
   async submitForm() {
-    this._ensurePage();
     await this.page.click(this.selectors.continueBtn);
   }
 }
-
-export default new CreateUserPage();
-
-
-
-
-// de scos partea cu page si inlocui cu this.selector.x.click

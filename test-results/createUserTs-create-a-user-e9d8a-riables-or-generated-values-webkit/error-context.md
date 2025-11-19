@@ -1,0 +1,649 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e5]:
+        - link "Automation Test Store" [ref=e7]:
+          - /url: https://automationteststore.com/
+          - img "Automation Test Store" [ref=e8]
+        - generic [ref=e10]:
+          - list [ref=e13]:
+            - listitem [ref=e14]:
+              - link "Login or register" [ref=e15]:
+                - /url: https://automationteststore.com/index.php?rt=account/login
+          - generic [ref=e17]:
+            - generic [ref=e18]: Main Menu
+            - list [ref=e19]:
+              - listitem [ref=e20]:
+                - link " Specials" [ref=e21]:
+                  - /url: https://automationteststore.com/index.php?rt=product/special
+                  - generic [ref=e22]: 
+                  - text: Specials
+              - listitem [ref=e23]:
+                - link " Account" [ref=e24]:
+                  - /url: https://automationteststore.com/index.php?rt=account/account
+                  - generic [ref=e25]: 
+                  - text: Account
+                - text:  
+              - listitem [ref=e26]:
+                - link " Cart" [ref=e27]:
+                  - /url: https://automationteststore.com/index.php?rt=checkout/cart
+                  - generic [ref=e28]: 
+                  - text: Cart
+              - listitem [ref=e29]:
+                - link " Checkout" [ref=e30]:
+                  - /url: https://automationteststore.com/index.php?rt=checkout/shipping
+                  - generic [ref=e31]: 
+                  - text: Checkout
+          - generic [ref=e34]:
+            - textbox "Search Keywords" [ref=e35]
+            - generic "Go" [ref=e36] [cursor=pointer]:
+              - generic [ref=e37]: 
+    - generic [ref=e39]:
+      - list [ref=e41]:
+        - listitem [ref=e42]:
+          - generic [ref=e44]: $ US Dollar
+      - list [ref=e47]:
+        - listitem [ref=e48]:
+          - link " 0 Items - $0.00" [ref=e49]:
+            - /url: https://automationteststore.com/index.php?rt=checkout/cart
+            - generic [ref=e50]: 
+            - text: 0 Items - $0.00
+          - text:   
+      - generic [ref=e53]:
+        - link "Facebook" [ref=e54]:
+          - /url: http://www.facebook.com
+        - link "Twitter" [ref=e55]:
+          - /url: https://twitter.com/
+        - link "Linkedin" [ref=e56]:
+          - /url: https://uk.linkedin.com/
+  - generic [ref=e57]:
+    - navigation [ref=e60]:
+      - list [ref=e61]:
+        - listitem [ref=e62]:
+          - link "Home" [ref=e63]:
+            - /url: https://automationteststore.com/
+          - text:      
+        - listitem [ref=e64]:
+          - link "Apparel & accessories" [ref=e65]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=68
+        - listitem [ref=e66]:
+          - link "Makeup" [ref=e67]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=36
+        - listitem [ref=e68]:
+          - link "Skincare" [ref=e69]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=43
+        - listitem [ref=e70]:
+          - link "Fragrance" [ref=e71]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=49
+        - listitem [ref=e72]:
+          - link "Men" [ref=e73]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=58
+        - listitem [ref=e74]:
+          - link "Hair Care" [ref=e75]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=52
+        - listitem [ref=e76]:
+          - link "Books" [ref=e77]:
+            - /url: https://automationteststore.com/index.php?rt=product/category&path=65
+    - list [ref=e80]:
+      - listitem [ref=e81]:
+        - link " Home" [ref=e82]:
+          - /url: https://automationteststore.com/
+          - generic "Home" [ref=e83]: 
+          - text: Home
+      - listitem [ref=e84]:
+        - text: 
+        - link "Account" [ref=e85]:
+          - /url: https://automationteststore.com/index.php?rt=account/account
+      - listitem [ref=e86]:
+        - text: 
+        - link "Register" [ref=e87]:
+          - /url: https://automationteststore.com/index.php?rt=account/create
+  - generic [ref=e91]:
+    - heading " Create Account" [level=1] [ref=e92]:
+      - generic [ref=e93]:
+        - generic [ref=e94]: 
+        - text: Create Account
+    - generic [ref=e95]:
+      - button "×" [ref=e96] [cursor=pointer]
+      - text: Login name must be alphanumeric only and between 5 and 64 characters!
+      - text: Email Address does not appear to be valid!
+    - generic [ref=e98]:
+      - paragraph [ref=e99]:
+        - text: If you already have an account with us, please login at the
+        - link "login page" [ref=e100]:
+          - /url: https://automationteststore.com/index.php?rt=account/login
+        - text: .
+      - heading "Your Personal Details" [level=4] [ref=e101]
+      - group [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]: "First Name:"
+          - generic [ref=e106]:
+            - textbox [ref=e107]: Test
+            - generic [ref=e108]: "*"
+        - generic [ref=e109]:
+          - generic [ref=e110]: "Last Name:"
+          - generic [ref=e111]:
+            - textbox [ref=e112]: User
+            - generic [ref=e113]: "*"
+        - generic [ref=e114]:
+          - generic [ref=e115]: "E-Mail:"
+          - generic [ref=e116]:
+            - textbox [ref=e117]: Asus VivoBook S14@test.com
+            - generic [ref=e118]: "*"
+          - generic [ref=e119]: Email Address does not appear to be valid!
+        - generic [ref=e120]:
+          - generic [ref=e121]: "Telephone:"
+          - textbox [ref=e123]: "123456789"
+        - generic [ref=e124]:
+          - generic [ref=e125]: "Fax:"
+          - textbox [ref=e127]
+      - heading "Your Address" [level=4] [ref=e128]
+      - group [ref=e130]:
+        - generic [ref=e131]:
+          - generic [ref=e132]: "Company:"
+          - textbox [ref=e134]
+        - generic [ref=e135]:
+          - generic [ref=e136]: "Address 1:"
+          - generic [ref=e137]:
+            - textbox [ref=e138]: Test Street 123
+            - generic [ref=e139]: "*"
+        - generic [ref=e140]:
+          - generic [ref=e141]: "Address 2:"
+          - textbox [ref=e143]
+        - generic [ref=e144]:
+          - generic [ref=e145]: "City:"
+          - generic [ref=e146]:
+            - textbox [ref=e147]: TestCity
+            - generic [ref=e148]: "*"
+        - generic [ref=e149]:
+          - generic [ref=e150]: "Region / State:"
+          - generic [ref=e151]:
+            - combobox [ref=e152]:
+              - option "--- Please Select ---"
+              - option "Aberdeen" [selected]
+              - option "Aberdeenshire"
+              - option "Anglesey"
+              - option "Angus"
+              - option "Argyll and Bute"
+              - option "Bedfordshire"
+              - option "Berkshire"
+              - option "Blaenau Gwent"
+              - option "Bridgend"
+              - option "Bristol"
+              - option "Buckinghamshire"
+              - option "Caerphilly"
+              - option "Cambridgeshire"
+              - option "Cardiff"
+              - option "Carmarthenshire"
+              - option "Ceredigion"
+              - option "Cheshire"
+              - option "Clackmannanshire"
+              - option "Conwy"
+              - option "Cornwall"
+              - option "Denbighshire"
+              - option "Derbyshire"
+              - option "Devon"
+              - option "Dorset"
+              - option "Dumfries and Galloway"
+              - option "Dundee"
+              - option "Durham"
+              - option "East Ayrshire"
+              - option "East Dunbartonshire"
+              - option "East Lothian"
+              - option "East Renfrewshire"
+              - option "East Riding of Yorkshire"
+              - option "East Sussex"
+              - option "Edinburgh"
+              - option "Essex"
+              - option "Falkirk"
+              - option "Fife"
+              - option "Flintshire"
+              - option "Glasgow"
+              - option "Gloucestershire"
+              - option "Greater London"
+              - option "Greater Manchester"
+              - option "Gwynedd"
+              - option "Hampshire"
+              - option "Herefordshire"
+              - option "Hertfordshire"
+              - option "Highlands"
+              - option "Inverclyde"
+              - option "Isle of Wight"
+              - option "Kent"
+              - option "Lancashire"
+              - option "Leicestershire"
+              - option "Lincolnshire"
+              - option "Merseyside"
+              - option "Merthyr Tydfil"
+              - option "Midlothian"
+              - option "Monmouthshire"
+              - option "Moray"
+              - option "Neath Port Talbot"
+              - option "Newport"
+              - option "Norfolk"
+              - option "North Ayrshire"
+              - option "North Lanarkshire"
+              - option "North Yorkshire"
+              - option "Northamptonshire"
+              - option "Northumberland"
+              - option "Nottinghamshire"
+              - option "Orkney Islands"
+              - option "Oxfordshire"
+              - option "Pembrokeshire"
+              - option "Perth and Kinross"
+              - option "Powys"
+              - option "Renfrewshire"
+              - option "Rhondda Cynon Taff"
+              - option "Rutland"
+              - option "Scottish Borders"
+              - option "Shetland Islands"
+              - option "Shropshire"
+              - option "Somerset"
+              - option "South Ayrshire"
+              - option "South Lanarkshire"
+              - option "South Yorkshire"
+              - option "Staffordshire"
+              - option "Stirling"
+              - option "Suffolk"
+              - option "Surrey"
+              - option "Swansea"
+              - option "Torfaen"
+              - option "Tyne and Wear"
+              - option "Vale of Glamorgan"
+              - option "Warwickshire"
+              - option "West Dunbartonshire"
+              - option "West Lothian"
+              - option "West Midlands"
+              - option "West Sussex"
+              - option "West Yorkshire"
+              - option "Western Isles"
+              - option "Wiltshire"
+              - option "Worcestershire"
+              - option "Wrexham"
+            - generic [ref=e153]: "*"
+        - generic [ref=e154]:
+          - generic [ref=e155]: "ZIP Code:"
+          - generic [ref=e156]:
+            - textbox [ref=e157]: "12345"
+            - generic [ref=e158]: "*"
+        - generic [ref=e159]:
+          - generic [ref=e160]: "Country:"
+          - generic [ref=e161]:
+            - combobox [ref=e162]:
+              - option "--- Please Select ---"
+              - option "Afghanistan"
+              - option "Albania"
+              - option "Algeria"
+              - option "American Samoa"
+              - option "Andorra"
+              - option "Angola"
+              - option "Anguilla"
+              - option "Antarctica"
+              - option "Antigua and Barbuda"
+              - option "Argentina"
+              - option "Armenia"
+              - option "Aruba"
+              - option "Australia"
+              - option "Austria"
+              - option "Azerbaijan"
+              - option "Bahamas"
+              - option "Bahrain"
+              - option "Bangladesh"
+              - option "Barbados"
+              - option "Belarus"
+              - option "Belgium"
+              - option "Belize"
+              - option "Benin"
+              - option "Bermuda"
+              - option "Bhutan"
+              - option "Bolivia"
+              - option "Bosnia and Herzegowina"
+              - option "Botswana"
+              - option "Bouvet Island"
+              - option "Brazil"
+              - option "British Indian Ocean Territory"
+              - option "Brunei Darussalam"
+              - option "Bulgaria"
+              - option "Burkina Faso"
+              - option "Burundi"
+              - option "Cambodia"
+              - option "Cameroon"
+              - option "Canada"
+              - option "Cape Verde"
+              - option "Cayman Islands"
+              - option "Central African Republic"
+              - option "Chad"
+              - option "Chile"
+              - option "China"
+              - option "Christmas Island"
+              - option "Cocos (Keeling) Islands"
+              - option "Colombia"
+              - option "Comoros"
+              - option "Congo"
+              - option "Cook Islands"
+              - option "Costa Rica"
+              - option "Cote D'Ivoire"
+              - option "Croatia"
+              - option "Cuba"
+              - option "Cyprus"
+              - option "Czech Republic"
+              - option "Denmark"
+              - option "Djibouti"
+              - option "Dominica"
+              - option "Dominican Republic"
+              - option "East Timor"
+              - option "Ecuador"
+              - option "Egypt"
+              - option "El Salvador"
+              - option "Equatorial Guinea"
+              - option "Eritrea"
+              - option "Estonia"
+              - option "Ethiopia"
+              - option "Falkland Islands (Malvinas)"
+              - option "Faroe Islands"
+              - option "Fiji"
+              - option "Finland"
+              - option "France"
+              - option "France, Metropolitan"
+              - option "French Guiana"
+              - option "French Polynesia"
+              - option "French Southern Territories"
+              - option "Gabon"
+              - option "Gambia"
+              - option "Georgia"
+              - option "Germany"
+              - option "Ghana"
+              - option "Gibraltar"
+              - option "Greece"
+              - option "Greenland"
+              - option "Grenada"
+              - option "Guadeloupe"
+              - option "Guam"
+              - option "Guatemala"
+              - option "Guinea"
+              - option "Guinea-bissau"
+              - option "Guyana"
+              - option "Haiti"
+              - option "Heard and Mc Donald Islands"
+              - option "Honduras"
+              - option "Hong Kong"
+              - option "Hungary"
+              - option "Iceland"
+              - option "India"
+              - option "Indonesia"
+              - option "Iran (Islamic Republic of)"
+              - option "Iraq"
+              - option "Ireland"
+              - option "Israel"
+              - option "Italy"
+              - option "Jamaica"
+              - option "Japan"
+              - option "Jordan"
+              - option "Kazakhstan"
+              - option "Kenya"
+              - option "Kiribati"
+              - option "Korea, Republic of"
+              - option "Kuwait"
+              - option "Kyrgyzstan"
+              - option "Lao People's Democratic Republic"
+              - option "Latvia"
+              - option "Lebanon"
+              - option "Lesotho"
+              - option "Liberia"
+              - option "Libyan Arab Jamahiriya"
+              - option "Liechtenstein"
+              - option "Lithuania"
+              - option "Luxembourg"
+              - option "Macau"
+              - option "Macedonia"
+              - option "Madagascar"
+              - option "Malawi"
+              - option "Malaysia"
+              - option "Maldives"
+              - option "Mali"
+              - option "Malta"
+              - option "Marshall Islands"
+              - option "Martinique"
+              - option "Mauritania"
+              - option "Mauritius"
+              - option "Mayotte"
+              - option "Mexico"
+              - option "Micronesia, Federated States of"
+              - option "Moldova, Republic of"
+              - option "Monaco"
+              - option "Mongolia"
+              - option "Montserrat"
+              - option "Morocco"
+              - option "Mozambique"
+              - option "Myanmar"
+              - option "Namibia"
+              - option "Nauru"
+              - option "Nepal"
+              - option "Netherlands"
+              - option "Netherlands Antilles"
+              - option "New Caledonia"
+              - option "New Zealand"
+              - option "Nicaragua"
+              - option "Niger"
+              - option "Nigeria"
+              - option "Niue"
+              - option "Norfolk Island"
+              - option "North Korea"
+              - option "Northern Ireland"
+              - option "Northern Mariana Islands"
+              - option "Norway"
+              - option "Oman"
+              - option "Pakistan"
+              - option "Palau"
+              - option "Panama"
+              - option "Papua New Guinea"
+              - option "Paraguay"
+              - option "Peru"
+              - option "Philippines"
+              - option "Pitcairn"
+              - option "Poland"
+              - option "Portugal"
+              - option "Puerto Rico"
+              - option "Qatar"
+              - option "Reunion"
+              - option "Romania"
+              - option "Russia"
+              - option "Rwanda"
+              - option "Saint Kitts and Nevis"
+              - option "Saint Lucia"
+              - option "Saint Vincent and the Grenadines"
+              - option "Samoa"
+              - option "San Marino"
+              - option "Sao Tome and Principe"
+              - option "Saudi Arabia"
+              - option "Senegal"
+              - option "Seychelles"
+              - option "Sierra Leone"
+              - option "Singapore"
+              - option "Slovak Republic"
+              - option "Slovenia"
+              - option "Solomon Islands"
+              - option "Somalia"
+              - option "South Africa"
+              - option "South Georgia & South Sandwich Islands"
+              - option "Spain"
+              - option "Sri Lanka"
+              - option "St. Helena"
+              - option "St. Pierre and Miquelon"
+              - option "Sudan"
+              - option "Suriname"
+              - option "Svalbard and Jan Mayen Islands"
+              - option "Swaziland"
+              - option "Sweden"
+              - option "Switzerland"
+              - option "Syrian Arab Republic"
+              - option "Taiwan"
+              - option "Tajikistan"
+              - option "Tanzania, United Republic of"
+              - option "Thailand"
+              - option "Togo"
+              - option "Tokelau"
+              - option "Tonga"
+              - option "Trinidad and Tobago"
+              - option "Tunisia"
+              - option "Turkey"
+              - option "Turkmenistan"
+              - option "Turks and Caicos Islands"
+              - option "Tuvalu"
+              - option "Uganda"
+              - option "Ukraine"
+              - option "United Arab Emirates"
+              - option "United Kingdom" [selected]
+              - option "United States"
+              - option "United States Minor Outlying Islands"
+              - option "Uruguay"
+              - option "Uzbekistan"
+              - option "Vanuatu"
+              - option "Vatican City State (Holy See)"
+              - option "Venezuela"
+              - option "Viet Nam"
+              - option "Virgin Islands (British)"
+              - option "Virgin Islands (U.S.)"
+              - option "Wallis and Futuna Islands"
+              - option "Western Sahara"
+              - option "Yemen"
+              - option "Yugoslavia"
+              - option "Zaire"
+              - option "Zambia"
+              - option "Zimbabwe"
+            - generic [ref=e163]: "*"
+      - heading "Login Details" [level=4] [ref=e164]
+      - group [ref=e166]:
+        - generic [ref=e167]:
+          - generic [ref=e168]: "Login name:"
+          - generic [ref=e169]:
+            - textbox [ref=e170]: Asus VivoBook S14
+            - generic [ref=e171]: "*"
+          - generic [ref=e172]: Login name must be alphanumeric only and between 5 and 64 characters!
+        - generic [ref=e173]:
+          - generic [ref=e174]: "Password:"
+          - generic [ref=e175]:
+            - textbox [ref=e176]
+            - generic [ref=e177]: "*"
+        - generic [ref=e178]:
+          - generic [ref=e179]: "Password Confirm:"
+          - generic [ref=e180]:
+            - textbox [ref=e181]
+            - generic [ref=e182]: "*"
+      - heading "Newsletter" [level=4] [ref=e183]
+      - group [ref=e185]:
+        - generic [ref=e186]:
+          - generic [ref=e187]: "Subscribe:"
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - radio "Yes" [ref=e190]
+              - text: "Yes"
+            - generic [ref=e191]:
+              - radio "No" [ref=e192]
+              - text: "No"
+      - generic [ref=e193]:
+        - generic [ref=e194]:
+          - text: I have read and agree to the
+          - link "Privacy Policy" [ref=e195]:
+            - /url: https://automationteststore.com/index.php?rt=r/content/content/loadInfo&content_id=2
+          - checkbox "I have read and agree to the Privacy Policy" [checked] [ref=e196]
+        - button " Continue" [ref=e198] [cursor=pointer]:
+          - generic [ref=e199]: 
+          - text: Continue
+  - contentinfo [ref=e203]:
+    - generic [ref=e205]:
+      - generic [ref=e208]:
+        - heading "About Us" [level=2] [ref=e209]
+        - paragraph [ref=e210]: This store has been created to enable students to practice their automation testing skills. This is not a real store, no orders are actually placed or payments taken. This store is to be used for educational purposes only.
+      - generic [ref=e213]:
+        - heading "Contact Us" [level=2] [ref=e214]
+        - list [ref=e215]:
+          - listitem [ref=e216]:
+            - generic [ref=e217]: 
+            - text: +123 456 7890
+          - listitem [ref=e218]:
+            - generic [ref=e219]: 
+            - text: admin@automationteststore.com
+      - generic [ref=e222]:
+        - heading "Testimonials" [level=2] [ref=e223]
+        - generic [ref=e224]:
+          - list [ref=e226]:
+            - listitem [ref=e227]:
+              - text: "\"Regular customer and products at great prices. Thanks again.\""
+              - generic [ref=e228]: "By : Mrs Baker on trustedmegareviews.org"
+            - listitem [ref=e229]:
+              - text: "\"Really great products and professional service!\""
+              - generic [ref=e230]: "By : Megan Witmore"
+            - listitem [ref=e231]:
+              - text: "\"I found this store to be very reasonably priced and the service was superb. Highly recommended \""
+              - generic [ref=e232]: "By : Jason Sturidge"
+            - listitem [ref=e233]:
+              - text: "\"Returns were easy and my replacement item arrived very quickly. Really great service. Thanks and will be buying again.\""
+              - generic [ref=e234]: "By : Kirsty Williams"
+            - listitem [ref=e235]:
+              - text: "\"Regular customer and products at great prices. Thanks again.\""
+              - generic [ref=e236]: "By : Mrs Baker on trustedmegareviews.org"
+            - listitem [ref=e237]:
+              - text: "\"Really great products and professional service!\""
+              - generic [ref=e238]: "By : Megan Witmore"
+          - list [ref=e239]:
+            - listitem [ref=e240]:
+              - generic [ref=e241]: "1"
+            - listitem [ref=e242]:
+              - generic [ref=e243] [cursor=pointer]: "2"
+            - listitem [ref=e244]:
+              - generic [ref=e245] [cursor=pointer]: "3"
+            - listitem [ref=e246]:
+              - generic [ref=e247] [cursor=pointer]: "4"
+      - generic [ref=e250]:
+        - heading "Newsletter Signup" [level=2] [ref=e251]
+        - generic [ref=e252]:  Sign up to Our Newsletter & get attractive Offers by subscribing to our newsletters.
+        - generic [ref=e255]:
+          - textbox "Subscribe to Newsletter" [ref=e256]
+          - button "Subscribe" [ref=e258] [cursor=pointer]
+    - generic [ref=e260]:
+      - list [ref=e263]:
+        - listitem [ref=e264]:
+          - link "About Us" [ref=e266]:
+            - /url: https://automationteststore.com/index.php?rt=content/content&content_id=1
+        - listitem [ref=e267]:
+          - link "Privacy Policy" [ref=e269]:
+            - /url: https://automationteststore.com/index.php?rt=content/content&content_id=2
+        - listitem [ref=e270]:
+          - link "Return Policy" [ref=e272]:
+            - /url: https://automationteststore.com/index.php?rt=content/content&content_id=3
+        - listitem [ref=e273]:
+          - link "Shipping" [ref=e275]:
+            - /url: https://automationteststore.com/index.php?rt=content/content&content_id=4
+        - listitem [ref=e276]:
+          - link "Contact Us" [ref=e277]:
+            - /url: https://automationteststore.com/index.php?rt=content/contact
+        - listitem [ref=e278]:
+          - link "Site Map" [ref=e279]:
+            - /url: https://automationteststore.com/index.php?rt=content/sitemap
+        - listitem [ref=e280]:
+          - link "Login" [ref=e281]:
+            - /url: https://automationteststore.com/index.php?rt=account/login
+      - generic [ref=e283]:
+        - link "Facebook" [ref=e284]:
+          - /url: http://www.facebook.com
+        - link "Twitter" [ref=e285]:
+          - /url: https://twitter.com/
+        - link "Linkedin" [ref=e286]:
+          - /url: https://uk.linkedin.com/
+    - generic [ref=e288]:
+      - img "payments" [ref=e291]
+      - generic [ref=e292]:
+        - text: Powered By
+        - link "AbanteCart" [ref=e293]:
+          - /url: http://www.abantecart.com
+        - text: Automation Test Store © 2025
+      - link "Support AbanteCart eCommerce" [ref=e296]:
+        - /url: http://www.abantecart.com/contribute-to-abantecart
+        - img "Support AbanteCart eCommerce" [ref=e297]
+    - link "Back to top" [ref=e298]:
+      - /url: "#"
+```

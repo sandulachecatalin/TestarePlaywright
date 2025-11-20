@@ -6,7 +6,7 @@ class LoginPage {
       usernameInput: '#loginFrm_loginname',
       passwordInput: '#loginFrm_password',
       loginButton: 'button[title="Login"]',
-      myAccountText: 'text=My Account'
+      myAccountText: '.maintext'
     };
   }
 

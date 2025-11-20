@@ -1,19 +1,16 @@
 import { test, expect } from '@playwright/test';
 import createUserPage from '../page/createUserPage.js';
-
-// Load environment variables
-import dotenv from 'dotenv';
-dotenv.config();
+import fs from 'fs';
 
 test('create a user using environment variables', async ({ page }) => {
-  const prefix = process.env.USER_PREFIX || "user";
-  const domain = process.env.USER_DOMAIN || "example.com";
-  const password = process.env.USER_PASSWORD || "DefaultPass123!";
+  // Generate test data
+  const password = "Pass123!";
+  const username = `user${Date.now()}`;
+  const email = `${username}@example.com`;
 
-  const uniquePart = Date.now();
-
-  const username = `${prefix}${uniquePart}`;
-  const email = `${username}@${domain}`;
+  // Save created user data to a file for use in other tests
+  const userData = { username, email, password };
+  fs.writeFileSync('createdUser.json', JSON.stringify(userData, null, 2));
 
   await createUserPage.visit(page);
   await createUserPage.goToLoginOrRegister();

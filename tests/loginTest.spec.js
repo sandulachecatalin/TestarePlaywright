@@ -6,14 +6,15 @@ import fs from 'fs';
 test('login using credentials created by createUser test', async ({ page }) => {
   const loginPage = new LoginPage(page);
 
-  // citim credentialele generate anterior
-  const data = JSON.parse(fs.readFileSync('tests/fixtures/user.json', 'utf-8'));
-  const username = data.username;
-  const password = data.password;
-
+  // Read user data from JSON file created by createUser.spec.js   
+  const userData = JSON.parse(fs.readFileSync('createdUser.json', 'utf-8'));
+  const username = userData.username;
+  const password = userData.password;
+  console.log(`Logging in with username: ${username} and password: ${password}`);
+  
   await loginPage.goToLoginPage();
   await loginPage.fillForm(username, password);
   await loginPage.submit();
 
-  await expect(page.locator(loginPage.selectors.myAccountText)).toBeVisible({ timeout: 15000 });
+  await expect(page.locator(loginPage.selectors.myAccountText)).toContainText('My Account', { timeout: 15000 });
 });

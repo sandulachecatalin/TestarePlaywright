@@ -20,7 +20,7 @@ export default defineConfig({
   reporter: 'html',             // HTML report
 
   use: {
-    headless: false,            // run browser visible
+    headless: process.env.CI ? true : false,           // run browser visible
     trace: 'on-first-retry',    // trace on first retry
     viewport: { width: 1280, height: 720 },
     ignoreHTTPSErrors: true,
